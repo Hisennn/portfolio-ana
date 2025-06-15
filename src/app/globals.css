@@ -5,11 +5,49 @@
   --foreground: #171717;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+.font-open {
+  font-family: var(--font-inter), 'Inter', sans-serif !important;
+}
+
+.font-lora {
+  font-family: var(--font-lora), 'Lora', serif !important;
+}
+
+.skill-float {
+  filter: drop-shadow(0 2px 8px rgba(0,0,0,0.08));
+  opacity: 0.85;
+  transition: opacity 0.3s;
+}
+
+@keyframes float1 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-18px) scale(1.08); }
+}
+@keyframes float2 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-12px) scale(1.05); }
+}
+@keyframes float3 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-22px) scale(1.09); }
+}
+@keyframes float4 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-10px) scale(1.04); }
+}
+@keyframes float5 {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-16px) scale(1.07); }
+}
+
+.animate-float1 { animation: float1 3.2s ease-in-out infinite; }
+.animate-float2 { animation: float2 3.7s ease-in-out infinite; }
+.animate-float3 { animation: float3 3.9s ease-in-out infinite; }
+.animate-float4 { animation: float4 3.5s ease-in-out infinite; }
+.animate-float5 { animation: float5 4.1s ease-in-out infinite; }
+
+.brightness-0 {
+  filter: brightness(0) !important;
 }
 
 @media (prefers-color-scheme: dark) {
