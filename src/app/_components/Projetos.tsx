@@ -4,10 +4,10 @@ import Link from "next/link";
 const projetos = [
   {
     id: "projeto-1",
-    titulo: "Projeto 1",
-    descricao: "Esse projeto é de uma PPPPP, pensado para utilizar cada espaço",
-    tecnologias: ["AutoCAD", "Revit", "Vray"],
-    imagem: "/img/placeholder.jpg",
+    titulo: "Escritório Residencial",
+    descricao: "Projeto de escritório residencial em cômodo único, com área de 6m².",
+    tecnologias: ["SketchUp", "Vray"],
+    imagem: "/img/projetos/office-banner.png",
     alt: "Projeto 1",
   },
   {

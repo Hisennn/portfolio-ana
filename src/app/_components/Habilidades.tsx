@@ -9,30 +9,31 @@ export default function Habilidades() {
               <h3 className="font-open text-sm text-gray-500 mb-6 px-2 py-1 border border-gray-300 w-fit rounded-sm bg-gray-50">
                 Hard Skills
               </h3>
-              <ul className="flex gap-5 md:gap-10 flex-wrap border-b border-gray-200 pb-8 select-none">
+              <ul className="flex gap-6 md:gap-8 flex-wrap border-b border-gray-200 pb-8 select-none">
                 {[
-                  { name: "AutoCAD", src: "/autocad.svg", width: 56, percent: 80 },
-                  { name: "SketchUp", src: "/sketchup.svg", width: 56, percent: 80 },
-                  { name: "V Ray", src: "/v-ray.svg", width: 56, percent: 80 },
-                  { name: "Photoshop", src: "/adobe-photoshop.svg", width: 56, percent: 80 },
-                  { name: "Enscape", src: "/enscape.png", width: 56, percent: 80, extraClass: "brightness-0" },
-                  { name: "Excel", src: "/microsoft-excel.svg", width: 56, percent: 55, extraClass: "brightness-0", color: "from-amber-500 to-orange-500" },
-                  { name: "Archicad", src: "/archicad.svg", width: 56, percent: 55, extraClass: "brightness-0", color: "from-amber-500 to-orange-500" },
-                  { name: "Revit", src: "/autodeskrevit.svg", width: 56, percent: 45, extraClass: "brightness-0", color: "from-red-500 to-pink-500" },
-                  { name: "Illustrator", src: "/adobe-illustrator.svg", width: 56, percent: 30, extraClass: "brightness-0", color: "from-red-500 to-pink-500" },
+                  { name: "AutoCAD", src: "/autocad.svg", width: 56, percent: 80, extraClass: "brightness-0 opacity-80" },
+                  { name: "Revit", src: "/autodeskrevit.svg", width: 56, percent: 45, extraClass: "brightness-0 opacity-80" },
+                  { name: "SketchUp", src: "/sketchup.svg", width: 56, percent: 80, extraClass: "brightness-0 opacity-80" },
+                  { name: "Layout", src: "/layout.png", width: 56, percent: 55, extraClass: "brightness-0 opacity-80" },
+                  { name: "Enscape", src: "/enscape.png", width: 56, percent: 80, extraClass: "brightness-0 opacity-80" },
+                  { name: "V Ray", src: "/v-ray.svg", width: 56, percent: 80, extraClass: "brightness-0 opacity-80" },
+                  { name: "Archicad", src: "/archicad.svg", width: 56, percent: 55, extraClass: "brightness-0 opacity-80" },
+                  { name: "Photoshop", src: "/adobe-photoshop.svg", width: 56, percent: 80, extraClass: "brightness-0 opacity-80" },
+                  { name: "Illustrator", src: "/adobe-illustrator.svg", width: 56, percent: 30, extraClass: "brightsness-0 opacity-80" },
+                  { name: "Office|365", src: "/365.png", width: 56, percent: 55, extraClass: "brightness-0 opacity-80" },
                 ].map((skill) => (
                   <li key={skill.name} className="flex flex-col items-center text-center hover:scale-110 transition-transform duration-300">
                     <span className="mb-1 text-gray-800 font-semibold font-open text-sm">{skill.name}</span>
                     <Image
-                      className={`w-14 h-14 ${skill.extraClass || ""}`}
+                      className={`w-11 h-11 ${skill.extraClass || ""}`}
                       src={skill.src}
                       alt={skill.name}
                       width={56}
                       height={56}
                     />
-                    <div className="mt-3 w-[80px] h-[16px] bg-gray-200 rounded-full overflow-hidden">
+                    <div className="mt-3 w-[72px] h-[13px] bg-gray-200 rounded-full overflow-hidden">
                       <div
-                        className={`h-full ${skill.color ? `bg-gradient-to-r ${skill.color}` : "bg-gradient-to-r from-blue-500 to-blue-600"} rounded-full`}
+                        className="h-full bg-gradient-to-r from-blue-200 to-blue-300 rounded-full"
                         style={{ width: `${skill.percent}%` }}
                       ></div>
                     </div>
