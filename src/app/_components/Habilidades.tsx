@@ -4,7 +4,7 @@ export default function Habilidades() {
   return (
     <div>
       <section id="skills" className="py-12 lg:py-16 px-8 lg:px-10 border-y border-gray-200 bg-white rounded-sm">
-            <h2 className="font-medium font-lora text-4xl lg:text-5xl mb-10 md:mb-12 text-gray-900">Habilidades</h2>
+            <h2 className="font-medium font-outfit text-4xl lg:text-5xl mb-8 md:mb-10 text-gray-900">Habilidades</h2>
             <div className="px-1 py-3 sm:px-4 sm:py-2">
               <h3 className="font-open text-sm text-gray-500 mb-6 px-2 py-1 border border-gray-300 w-fit rounded-sm bg-gray-50">
                 Hard Skills
@@ -22,7 +22,7 @@ export default function Habilidades() {
                   { name: "Illustrator", src: "/adobe-illustrator.svg", width: 56, percent: 30, extraClass: "brightness-0", color: "from-red-500 to-pink-500" },
                 ].map((skill) => (
                   <li key={skill.name} className="flex flex-col items-center text-center hover:scale-110 transition-transform duration-300">
-                    <span className="mb-1 text-gray-800 font-semibold font-open">{skill.name}</span>
+                    <span className="mb-1 text-gray-800 font-semibold font-open text-sm">{skill.name}</span>
                     <Image
                       className={`w-14 h-14 ${skill.extraClass || ""}`}
                       src={skill.src}
@@ -43,7 +43,7 @@ export default function Habilidades() {
               <h3 className="font-open text-sm text-gray-500 mt-8 mb-6 px-2 py-1 border border-gray-300 w-fit rounded-sm bg-gray-50">
                 Soft Skills
               </h3>
-              <ul className="flex flex-col gap-3 list-disc ml-8 md:text-[1.375rem] leading-relaxed">
+              <ul className="flex flex-col gap-4 text-lg lg:text-xl list-disc pl-6">
                 <li className="font-open text-gray-800">
                   <strong className="text-gray-900">Inglês</strong> - Avançado
                 </li>

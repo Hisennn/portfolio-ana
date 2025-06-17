@@ -7,11 +7,11 @@ export default function Footer() {
       <footer className="pb-8 border-t border-gray-300 px-6">
             <div className="mt-8 flex flex-col gap-8 md:gap-0 md:flex-row justify-between">
               <div className="md:my-auto">
-                <p className="text-gray-900 font-medium text-lg italic md:text-2xl">
+                <p className="text-gray-900 font-medium text-lg md:text-xl italic">
                   Gostou dos projetos? Entre em contato e vamos conversar!
                 </p>
               </div>
-              <ul className="flex flex-col gap-2.5 font-medium lg:text-2xl text-gray-900 md:text-lg">
+              <ul className="flex flex-col gap-2.5 font-medium text-base lg:text-lg text-gray-900">
                 <li className="flex items-center gap-2 leading-none ml-2">
                   <Image src="/img/map-pin.svg" alt="" width={24} height={24} />
                   São Paulo, Brasil

@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import { Inter, Lora } from "next/font/google";
+import { Inter, Outfit } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
   display: "swap",
 });
-const lora = Lora({
+const outfit = Outfit({
   subsets: ["latin"],
-  variable: "--font-lora",
+  variable: "--font-outfit",
   display: "swap",
 });
 
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${inter.variable} ${lora.variable}`}>
+    <html lang="pt-BR" className={`${inter.variable} ${outfit.variable}`}>
       <body className="antialiased">{children}</body>
     </html>
   );
